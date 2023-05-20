@@ -9,7 +9,7 @@ def main():
     st.write("Name: Brian Sumayan")
     st.write("Section: CPE32S6")
     st.write("Instructor: Dr. Jonathan Taylar")
-    st.title("Class Weather ( Ant/Tick)")
+    st.title("( Ant/Tick)")
 
    
     @st.cache_resource
@@ -27,7 +27,7 @@ def main():
         return prediction
 
     model = load_model()
-    class_names = ["Ant", "Tick"]
+    class_names = ["Tick", "Ant"]
     
 
     file = st.file_uploader("Choose a Ant or Tick picture from your computer", type=["jpg", "png", "jpeg"])
